@@ -10,22 +10,20 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            #region Calculate for float type
-            float A = 10;
-            float B = 0.01F;
-            float expressionF = ((A - B) * (A - B) * (A - B) * (A - B) - (A * A * A * A + 6 * A * A * B * B + B * B * B * B)) / (-4 * A * B * (B * B + A * A));
-
-            // 1
-            Console.WriteLine($"Выражение с float типом равно: {expressionF}");
-            #endregion
-
-            #region Calculate for double type
             double a = 10;
             double b = 0.01;
+            #region Calculate for double type
             double expressionD = (Math.Pow(a - b, 4) - (Math.Pow(a, 4) + 6 * Math.Pow(a * b, 2) + Math.Pow(b, 4))) / (-4 * a * b * (Math.Pow(b, 2) + Math.Pow(a, 2)));
 
             // 0,999999999999975
             Console.WriteLine($"Выражение с double типом равно: {expressionD}");
+            #endregion
+
+            #region Calculate for float type
+            float expressionF = (float)expressionD;
+
+            // 1
+            Console.WriteLine($"Выражение с float типом равно: {expressionF}");
             #endregion
 
             /* Объяснение различия в ответах
