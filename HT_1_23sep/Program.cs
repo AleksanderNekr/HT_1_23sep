@@ -11,8 +11,8 @@ namespace HT_1_23sep
         static void Main(string[] args)
         {
             #region Task1
-            int m, n, resultTask1_1;
-            bool isValidInput, resultTask1_2, resultTask1_3;
+            int m, n, r1;
+            bool isValidInput, r2, r3;
             string tmp;
 
             #region Input for 1.1-1.3
@@ -40,18 +40,18 @@ namespace HT_1_23sep
             #endregion
 
             #region Calculating 1.1-1.3
-            resultTask1_1 = n++ * m;
-            Console.WriteLine($"n++ * m = {resultTask1_1}, m = {m}, n = {n}");
+            r1 = n++ * m;
+            Console.WriteLine($"n++ * m = {r1}, m = {m}, n = {n}");
 
-            resultTask1_2 = m-- < n;
-            Console.WriteLine($"m-- < n = {resultTask1_2}, m = {m}, n = {n}");
+            r2 = m-- < n;
+            Console.WriteLine($"m-- < n = {r2}, m = {m}, n = {n}");
 
-            resultTask1_3 = ++m > n;
-            Console.WriteLine($"++m > n = {resultTask1_3}, m = {m}, n = {n}");
+            r3 = ++m > n;
+            Console.WriteLine($"++m > n = {r3}, m = {m}, n = {n}");
             #endregion
 
             #region Task 1.4
-            double x, resultTask1_4;
+            double x, y;
             do
             {
                 Console.WriteLine("Введите вещественное число x");
@@ -63,13 +63,38 @@ namespace HT_1_23sep
                 }
             } while (!isValidInput);
 
-            resultTask1_4 = Math.Cos(Math.Atan(x));
-            Console.WriteLine($"y = {resultTask1_4}");
+            y = Math.Cos(Math.Atan(x));
+            Console.WriteLine($"y = {y}");
             #endregion
             #endregion
 
             #region Task2
+            bool isInArea;
 
+            do
+            {
+                Console.WriteLine("Введите координату Х");
+                tmp = Console.ReadLine();
+                isValidInput = double.TryParse(tmp, out x);
+                if (!isValidInput)
+                {
+                    Console.WriteLine("Неверно введена координата Х!");
+                }
+            } while (!isValidInput);
+
+            do
+            {
+                Console.WriteLine("Введите координату Y");
+                tmp = Console.ReadLine();
+                isValidInput = double.TryParse(tmp, out y);
+                if (!isValidInput)
+                {
+                    Console.WriteLine("Неверно введена координата Y!");
+                }
+            } while (!isValidInput);
+
+            isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
+            Console.WriteLine(isInArea);
             #endregion
         }
     }
