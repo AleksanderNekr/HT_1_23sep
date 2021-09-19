@@ -13,7 +13,7 @@ namespace Task3
             double a = 10;
             double b = 0.01;
             #region Calculate for double type
-            double expressionD = (Math.Pow(a - b, 4) - (Math.Pow(a, 4) + 6 * Math.Pow(a * b, 2) + Math.Pow(b, 4))) / (-4 * a * b * (Math.Pow(b, 2) + Math.Pow(a, 2)));
+            double expressionD = (Math.Pow(a - b, 4) - (Math.Pow(a, 4) + (6 * Math.Pow(a * b, 2)) + Math.Pow(b, 4))) / (-4 * a * b * (Math.Pow(b, 2) + Math.Pow(a, 2)));
 
             // 0,999999999999975
             Console.WriteLine($"Выражение с double типом равно: {expressionD}");
