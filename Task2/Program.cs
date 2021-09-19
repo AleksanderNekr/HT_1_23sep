@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task2
 {
@@ -14,6 +10,7 @@ namespace Task2
             bool isValidInput, isInArea;
             double x, y;
 
+            #region Input
             do
             {
                 Console.WriteLine("Введите координату Х");
@@ -35,6 +32,7 @@ namespace Task2
                     Console.WriteLine("Неверно введена координата Y!");
                 }
             } while (!isValidInput);
+            #endregion
 
             isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
             Console.WriteLine(isInArea);
