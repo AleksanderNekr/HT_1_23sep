@@ -67,35 +67,6 @@ namespace HT_1_23sep
             Console.WriteLine($"y = {y}");
             #endregion
             #endregion
-
-            #region Task2
-            bool isInArea;
-
-            do
-            {
-                Console.WriteLine("Введите координату Х");
-                tmp = Console.ReadLine();
-                isValidInput = double.TryParse(tmp, out x);
-                if (!isValidInput)
-                {
-                    Console.WriteLine("Неверно введена координата Х!");
-                }
-            } while (!isValidInput);
-
-            do
-            {
-                Console.WriteLine("Введите координату Y");
-                tmp = Console.ReadLine();
-                isValidInput = double.TryParse(tmp, out y);
-                if (!isValidInput)
-                {
-                    Console.WriteLine("Неверно введена координата Y!");
-                }
-            } while (!isValidInput);
-
-            isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
-            Console.WriteLine(isInArea);
-            #endregion
         }
     }
 }
