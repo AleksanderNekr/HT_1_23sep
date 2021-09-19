@@ -6,7 +6,6 @@ namespace HT_1_23sep
     {
         static void Main(string[] args)
         {
-            #region Task1
             int m, n, r1;
             bool isValidInput, r2, r3;
             string tmp;
@@ -59,9 +58,9 @@ namespace HT_1_23sep
                 }
             } while (!isValidInput);
 
+            // В этом примере ОДЗ на х принадлежит области действительных чисел
             y = Math.Cos(Math.Atan(x));
             Console.WriteLine($"y = {y}");
-            #endregion
             #endregion
         }
     }
