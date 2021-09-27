@@ -2,11 +2,12 @@
 
 namespace Task3
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             #region Calculate for double type
+
             {
                 double a = 10;
                 double b = 0.01;
@@ -17,9 +18,11 @@ namespace Task3
                 double resultDouble = numerator / denominator;
                 Console.WriteLine($"double: {resultDouble}");
             }
-            #endregion
+
+            #endregion Calculate for double type
 
             #region Calculate for float type
+
             {
                 float a = 10;
                 float b = 0.01f;
@@ -30,7 +33,8 @@ namespace Task3
                 float resultFloat = numerator / denominator;
                 Console.WriteLine($"float: {resultFloat}");
             }
-            #endregion
+
+            #endregion Calculate for float type
 
             /* Объяснение различия в ответах
              *             Приблизительный диапазон значений	   Точность
@@ -39,7 +43,7 @@ namespace Task3
              *
              *   Таким образом, тип float имеет меньший диапазон значений и меньшее количество знаков после запятой,
              *  что делает его менее точным в сравнении с типом double
-            */
+             */
         }
     }
 }

@@ -2,15 +2,16 @@
 
 namespace HT_1_23sep
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int m, n, r1;
             bool isValidInput, r2, r3;
             string tmp;
 
             #region Input for 1.1-1.3
+
             do
             {
                 Console.WriteLine("Введите целое число m");
@@ -32,9 +33,11 @@ namespace HT_1_23sep
                     Console.WriteLine("Неверно введено число n!");
                 }
             } while (!isValidInput);
-            #endregion
+
+            #endregion Input for 1.1-1.3
 
             #region Calculating 1.1-1.3
+
             r1 = n++ * m;
             Console.WriteLine($"n++ * m = {r1}, m = {m}, n = {n}");
 
@@ -43,9 +46,11 @@ namespace HT_1_23sep
 
             r3 = ++m > n;
             Console.WriteLine($"++m > n = {r3}, m = {m}, n = {n}");
-            #endregion
+
+            #endregion Calculating 1.1-1.3
 
             #region Task 1.4
+
             double x, y;
             do
             {
@@ -61,7 +66,8 @@ namespace HT_1_23sep
             // В этом примере ОДЗ на х принадлежит области действительных чисел
             y = Math.Cos(Math.Atan(x));
             Console.WriteLine($"y = {y}");
-            #endregion
+
+            #endregion Task 1.4
         }
     }
 }

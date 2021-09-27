@@ -2,15 +2,16 @@
 
 namespace Task2
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string tmp;
             bool isValidInput, isInArea;
             double x, y;
 
             #region Input
+
             do
             {
                 Console.WriteLine("Введите координату Х");
@@ -32,7 +33,8 @@ namespace Task2
                     Console.WriteLine("Неверно введена координата Y!");
                 }
             } while (!isValidInput);
-            #endregion
+
+            #endregion Input
 
             isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
             Console.WriteLine(isInArea);
