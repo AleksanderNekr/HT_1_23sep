@@ -7,7 +7,7 @@ namespace Task2
         private static void Main(string[] args)
         {
             string tmp;
-            bool isValidInput, isInArea;
+            bool isValidInput;
             double x, y;
 
             #region Input
@@ -36,7 +36,7 @@ namespace Task2
 
             #endregion Input
 
-            isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
+            var isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
             Console.WriteLine(isInArea);
         }
     }
