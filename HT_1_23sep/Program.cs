@@ -2,9 +2,9 @@
 
 namespace HT_1_23sep
 {
-    internal class Program
+    internal static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             int m, n, r1;
             bool isValidInput, r2, r3;
