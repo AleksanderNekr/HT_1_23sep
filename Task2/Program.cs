@@ -12,6 +12,7 @@ namespace Task2
 
             #region Input
 
+            // Ввод координаты x
             do
             {
                 Console.WriteLine("Введите координату Х");
@@ -23,6 +24,7 @@ namespace Task2
                 }
             } while (!isValidInput);
 
+            // Ввод координаты y
             do
             {
                 Console.WriteLine("Введите координату Y");
@@ -36,7 +38,10 @@ namespace Task2
 
             #endregion Input
 
+            // Проверка на принадлежность к области
             var isInArea = x >= 0 && y >= -7 && x <= 5 && x + y <= 5;
+
+            // Вывод принадлежности
             Console.WriteLine(isInArea);
         }
     }

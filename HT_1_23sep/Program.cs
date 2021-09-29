@@ -12,6 +12,7 @@ namespace HT_1_23sep
 
             #region Input for 1.1-1.3
 
+            // Ввод числа m
             do
             {
                 Console.WriteLine("Введите целое число m");
@@ -23,6 +24,7 @@ namespace HT_1_23sep
                 }
             } while (!isValidInput);
 
+            // Ввод числа n
             do
             {
                 Console.WriteLine("Введите целое число n");
@@ -38,12 +40,15 @@ namespace HT_1_23sep
 
             #region Calculating 1.1-1.3
 
+            // Вычисление и вывод r1
             r1 = n++ * m;
             Console.WriteLine($"n++ * m = {r1}, m = {m}, n = {n}");
 
+            // Вычисление и вывод r2
             r2 = m-- < n;
             Console.WriteLine($"m-- < n = {r2}, m = {m}, n = {n}");
 
+            // Вычисление и вывод r3
             r3 = ++m > n;
             Console.WriteLine($"++m > n = {r3}, m = {m}, n = {n}");
 
@@ -52,6 +57,8 @@ namespace HT_1_23sep
             #region Task 1.4
 
             double x, y;
+
+            // Ввод значения x
             do
             {
                 Console.WriteLine("Введите вещественное число x");
@@ -65,6 +72,8 @@ namespace HT_1_23sep
 
             // В этом примере ОДЗ на х принадлежит области действительных чисел
             y = Math.Cos(Math.Atan(x));
+
+            // Вывод y
             Console.WriteLine($"y = {y}");
 
             #endregion Task 1.4

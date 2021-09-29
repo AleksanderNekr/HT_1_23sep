@@ -9,10 +9,10 @@ namespace Task3
             #region Calculate for double type
 
             {
-                double a = 10;
-                double b = 0.01;
+                const double a = 10;
+                const double b = 0.01;
                 double subtrahend = Math.Pow(a - b, 4);
-                double subtractor = Math.Pow(a, 4) + (6 * Math.Pow(a * b, 2)) + Math.Pow(b, 4);
+                double subtractor = Math.Pow(a, 4) + 6 * Math.Pow(a * b, 2) + Math.Pow(b, 4);
                 double numerator = subtrahend - subtractor;
                 double denominator = -4 * a * b * (Math.Pow(b, 2) + Math.Pow(a, 2));
                 double resultDouble = numerator / denominator;
@@ -24,10 +24,10 @@ namespace Task3
             #region Calculate for float type
 
             {
-                float a = 10;
-                float b = 0.01f;
+                const float a = 10;
+                const float b = 0.01f;
                 float subtrahend = (float)Math.Pow(a - b, 4);
-                float subtractor = (float)Math.Pow(a, 4) + (6 * (float)Math.Pow(a * b, 2)) + (float)Math.Pow(b, 4);
+                float subtractor = (float)Math.Pow(a, 4) + 6 * (float)Math.Pow(a * b, 2) + (float)Math.Pow(b, 4);
                 float numerator = subtrahend - subtractor;
                 float denominator = -4 * a * b * ((float)Math.Pow(b, 2) + (float)Math.Pow(a, 2));
                 float resultFloat = numerator / denominator;
